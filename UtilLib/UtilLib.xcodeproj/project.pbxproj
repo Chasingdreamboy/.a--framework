@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A151484F1E23722900280E10 /* UtilLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148451E23722900280E10 /* UtilLib.framework */; };
+		A15148541E23722900280E10 /* UtilLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15148531E23722900280E10 /* UtilLibTests.swift */; };
+		A15148561E23722900280E10 /* UtilLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A15148481E23722900280E10 /* UtilLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A15148A41E23726800280E10 /* jcore-ios-1.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148A11E23726800280E10 /* jcore-ios-1.0.0.a */; };
+		A15148A51E23726800280E10 /* jpush-ios-3.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148A21E23726800280E10 /* jpush-ios-3.0.0.a */; };
+		A15148A61E23726800280E10 /* JPUSHService.h in Headers */ = {isa = PBXBuildFile; fileRef = A15148A31E23726800280E10 /* JPUSHService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A15148AE1E2376E000280E10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148AD1E2376E000280E10 /* CoreGraphics.framework */; };
+		A15148B01E2376E500280E10 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148AF1E2376E500280E10 /* CFNetwork.framework */; };
+		A15148B21E2376EB00280E10 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148B11E2376EB00280E10 /* CoreTelephony.framework */; };
+		A15148B41E2376F100280E10 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148B31E2376F100280E10 /* SystemConfiguration.framework */; };
+		A15148B61E2376F700280E10 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148B51E2376F700280E10 /* Security.framework */; };
+		A15148B81E2376FC00280E10 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148B71E2376FC00280E10 /* libz.tbd */; };
+		A15148BA1E23770100280E10 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148B91E23770100280E10 /* UserNotifications.framework */; };
+		A15148BC1E23770700280E10 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A15148BB1E23770700280E10 /* libresolv.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A15148501E23722900280E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A151483C1E23722900280E10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A15148441E23722900280E10;
+			remoteInfo = UtilLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A15148451E23722900280E10 /* UtilLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtilLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15148481E23722900280E10 /* UtilLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilLib.h; sourceTree = "<group>"; };
+		A15148491E23722900280E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A151484E1E23722900280E10 /* UtilLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15148531E23722900280E10 /* UtilLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilLibTests.swift; sourceTree = "<group>"; };
+		A15148551E23722900280E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15148A11E23726800280E10 /* jcore-ios-1.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-1.0.0.a"; sourceTree = "<group>"; };
+		A15148A21E23726800280E10 /* jpush-ios-3.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.0.0.a"; sourceTree = "<group>"; };
+		A15148A31E23726800280E10 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		A15148AD1E2376E000280E10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A15148AF1E2376E500280E10 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A15148B11E2376EB00280E10 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A15148B31E2376F100280E10 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A15148B51E2376F700280E10 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A15148B71E2376FC00280E10 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A15148B91E23770100280E10 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		A15148BB1E23770700280E10 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A15148411E23722900280E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15148BC1E23770700280E10 /* libresolv.tbd in Frameworks */,
+				A15148BA1E23770100280E10 /* UserNotifications.framework in Frameworks */,
+				A15148B81E2376FC00280E10 /* libz.tbd in Frameworks */,
+				A15148B61E2376F700280E10 /* Security.framework in Frameworks */,
+				A15148B41E2376F100280E10 /* SystemConfiguration.framework in Frameworks */,
+				A15148B21E2376EB00280E10 /* CoreTelephony.framework in Frameworks */,
+				A15148B01E2376E500280E10 /* CFNetwork.framework in Frameworks */,
+				A15148AE1E2376E000280E10 /* CoreGraphics.framework in Frameworks */,
+				A15148A51E23726800280E10 /* jpush-ios-3.0.0.a in Frameworks */,
+				A15148A41E23726800280E10 /* jcore-ios-1.0.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A151484B1E23722900280E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A151484F1E23722900280E10 /* UtilLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A151483B1E23722900280E10 = {
+			isa = PBXGroup;
+			children = (
+				A15148A01E23726800280E10 /* JPush */,
+				A15148471E23722900280E10 /* UtilLib */,
+				A15148521E23722900280E10 /* UtilLibTests */,
+				A15148461E23722900280E10 /* Products */,
+				A15148AC1E2376E000280E10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A15148461E23722900280E10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A15148451E23722900280E10 /* UtilLib.framework */,
+				A151484E1E23722900280E10 /* UtilLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A15148471E23722900280E10 /* UtilLib */ = {
+			isa = PBXGroup;
+			children = (
+				A15148481E23722900280E10 /* UtilLib.h */,
+				A15148491E23722900280E10 /* Info.plist */,
+			);
+			path = UtilLib;
+			sourceTree = "<group>";
+		};
+		A15148521E23722900280E10 /* UtilLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				A15148531E23722900280E10 /* UtilLibTests.swift */,
+				A15148551E23722900280E10 /* Info.plist */,
+			);
+			path = UtilLibTests;
+			sourceTree = "<group>";
+		};
+		A15148A01E23726800280E10 /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				A15148A11E23726800280E10 /* jcore-ios-1.0.0.a */,
+				A15148A21E23726800280E10 /* jpush-ios-3.0.0.a */,
+				A15148A31E23726800280E10 /* JPUSHService.h */,
+			);
+			path = JPush;
+			sourceTree = "<group>";
+		};
+		A15148AC1E2376E000280E10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A15148BB1E23770700280E10 /* libresolv.tbd */,
+				A15148B91E23770100280E10 /* UserNotifications.framework */,
+				A15148B71E2376FC00280E10 /* libz.tbd */,
+				A15148B51E2376F700280E10 /* Security.framework */,
+				A15148B31E2376F100280E10 /* SystemConfiguration.framework */,
+				A15148B11E2376EB00280E10 /* CoreTelephony.framework */,
+				A15148AF1E2376E500280E10 /* CFNetwork.framework */,
+				A15148AD1E2376E000280E10 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A15148421E23722900280E10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15148A61E23726800280E10 /* JPUSHService.h in Headers */,
+				A15148561E23722900280E10 /* UtilLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A15148441E23722900280E10 /* UtilLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15148591E23722900280E10 /* Build configuration list for PBXNativeTarget "UtilLib" */;
+			buildPhases = (
+				A15148401E23722900280E10 /* Sources */,
+				A15148411E23722900280E10 /* Frameworks */,
+				A15148421E23722900280E10 /* Headers */,
+				A15148431E23722900280E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UtilLib;
+			productName = UtilLib;
+			productReference = A15148451E23722900280E10 /* UtilLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A151484D1E23722900280E10 /* UtilLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A151485C1E23722900280E10 /* Build configuration list for PBXNativeTarget "UtilLibTests" */;
+			buildPhases = (
+				A151484A1E23722900280E10 /* Sources */,
+				A151484B1E23722900280E10 /* Frameworks */,
+				A151484C1E23722900280E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A15148511E23722900280E10 /* PBXTargetDependency */,
+			);
+			name = UtilLibTests;
+			productName = UtilLibTests;
+			productReference = A151484E1E23722900280E10 /* UtilLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A151483C1E23722900280E10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = xiaolin;
+				TargetAttributes = {
+					A15148441E23722900280E10 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A151484D1E23722900280E10 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A151483F1E23722900280E10 /* Build configuration list for PBXProject "UtilLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A151483B1E23722900280E10;
+			productRefGroup = A15148461E23722900280E10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A15148441E23722900280E10 /* UtilLib */,
+				A151484D1E23722900280E10 /* UtilLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A15148431E23722900280E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A151484C1E23722900280E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A15148401E23722900280E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A151484A1E23722900280E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15148541E23722900280E10 /* UtilLibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A15148511E23722900280E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A15148441E23722900280E10 /* UtilLib */;
+			targetProxy = A15148501E23722900280E10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A15148571E23722900280E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A15148581E23722900280E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A151485A1E23722900280E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UtilLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JPush",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = xiaolin.UtilLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A151485B1E23722900280E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UtilLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JPush",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = xiaolin.UtilLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A151485D1E23722900280E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UtilLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xiaolin.UtilLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A151485E1E23722900280E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UtilLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xiaolin.UtilLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A151483F1E23722900280E10 /* Build configuration list for PBXProject "UtilLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15148571E23722900280E10 /* Debug */,
+				A15148581E23722900280E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15148591E23722900280E10 /* Build configuration list for PBXNativeTarget "UtilLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A151485A1E23722900280E10 /* Debug */,
+				A151485B1E23722900280E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A151485C1E23722900280E10 /* Build configuration list for PBXNativeTarget "UtilLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A151485D1E23722900280E10 /* Debug */,
+				A151485E1E23722900280E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A151483C1E23722900280E10 /* Project object */;
+}
